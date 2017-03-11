@@ -1,0 +1,10 @@
+<aside>
+  <div>
+    <img src="{{close.imgUrl}}" alt="close.alt">
+  </div>
+  <div>
+    <ul *ngFor="let list of menuList" >
+      <li><img src="{{list.imgUrl}}" alt="{{list.alt}}">{{list.title}}</li>
+    </ul>
+  </div>
+</aside>
