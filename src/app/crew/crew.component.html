@@ -1,3 +1,10 @@
-<p>
-  crew works!
-</p>
+<!--TODO: use flex box-->
+<!--TODO: adding routing to each member to bio page-->
+<section>
+  <div *ngFor="let member of crew" >
+    <div>
+      <img src="member.imgUrl" alt="{{member.name}} photo">
+      <p>{{member.name}}</p>
+    </div>
+  </div>
+</section>

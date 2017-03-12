@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CrewService } from './shared/crew.service';
+import { CREW } from './shared/crew.model';
 
 @Component({
   selector: 'app-crew',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew.component.styl']
 })
 export class CrewComponent implements OnInit {
-
-  constructor() { }
+  crew: CREW;
+  constructor(private crewService: CrewService) { }
 
   ngOnInit() {
+    this.crewService.getCrew()
+      .then(data => { return data; });
   }
 
 }
