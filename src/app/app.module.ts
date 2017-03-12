@@ -12,6 +12,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ServicesComponent } from './services/services.component';
 import { CrewComponent } from './crew/crew.component';
+import { BioComponent } from './bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CrewComponent } from './crew/crew.component';
     SideMenuComponent,
     GalleryComponent,
     ServicesComponent,
-    CrewComponent
+    CrewComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,

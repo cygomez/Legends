@@ -1,0 +1,30 @@
+<section>
+  <div>
+    <!--Add Back Arrow here-->
+  </div>
+
+  <div>
+    <!--Member Image-->
+    <div></div>
+
+    <!--Name, Social Media Accounts , Booking-->
+    <div>
+      
+      <!--Member Name-->
+      <div>
+        <h3>{{member.name}}</h3>
+      </div>
+
+      <!--Social Media Accounts-->
+      <div>
+        <ul *ngFor="let member of information" >
+          <li>{{member.socialMedia}}</li>
+        </ul>
+      </div>
+
+      <!--Booking-->
+      <div></div>
+
+    </div>
+  </div>
+</section>
