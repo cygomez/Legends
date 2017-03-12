@@ -16,4 +16,6 @@ export class CrewComponent implements OnInit {
       .then(data => { return data; });
   }
 
+  // TODO: Add routing once user clicks on Memeber Photo
+
 }
