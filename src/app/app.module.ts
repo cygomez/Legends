@@ -14,6 +14,9 @@ import { ServicesComponent } from './services/services.component';
 import { CrewComponent } from './crew/crew.component';
 import { BioComponent } from './bio/bio.component';
 
+
+import { CrewModule } from '../app/crew/crew.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,8 @@ import { BioComponent } from './bio/bio.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CrewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
