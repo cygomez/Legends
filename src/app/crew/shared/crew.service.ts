@@ -10,6 +10,6 @@ export class CrewService {
     }
 
     getCrewMember(name: string) {
-        return CREWDATA.filter(member => member.name === name).subscribe(person => person);
+        return CREWDATA.filter(member => member.name === name);
     }
 }

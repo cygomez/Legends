@@ -73,4 +73,4 @@ const CREWINFO: CREW[] = [
 ];
 
 
-export const CREWDATA  = Rx.Observable.from(CREWINFO);
+export const CREWDATA: Observable<any>  = Rx.Observable.from(CREWINFO);
