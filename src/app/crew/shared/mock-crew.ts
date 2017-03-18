@@ -1,6 +1,9 @@
-import { CREW } from '../shared/crew.model';
+import {CREW} from './crew.model';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/from';
+import * as Rx from 'rxjs/Rx';
 
-export const CREWDATA: CREW[] = [
+const CREWINFO: CREW[] = [
     {
         name: 'Mike',        // Name of Barbers
         imgUrl: '../../../assets/images/barbers/Andrew.png',     // File to Barber Head Shot
@@ -68,3 +71,6 @@ export const CREWDATA: CREW[] = [
         bioStory: ''
     }
 ];
+
+
+export const CREWDATA  = Rx.Observable.from(CREWINFO);

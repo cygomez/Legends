@@ -1,8 +1,13 @@
 <!--TODO: use flex box-->
 <!--TODO: adding routing to each member to bio page-->
 <section>
+
+  <!--Section Title-->
+  <div>
+    <h1>{{ title }}</h1>
+  </div>
   <div *ngFor="let member of crew" >
-    <div>
+    <div (click)="goToMember(member)">
       <img src="member.imgUrl" class="img-circle" alt="{{member.name}} photo">
       <p>{{member.name}}</p>
     </div>
