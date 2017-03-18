@@ -20,8 +20,8 @@ export class CrewComponent implements OnInit {
   }
 
   // TODO: Add routing once user clicks on Memeber Photo
-  goToMember(member){
-    this.router.navigate(['/crew', member.name])
+  goToMember(member) {
+    this.router.navigate(['/crew', member.name]);
   }
 
 }
