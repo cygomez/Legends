@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { CREWDATA } from '../shared/mock-crew';
 
 import 'rxjs/add/operator/filter';

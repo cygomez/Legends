@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CrewComponent } from './crew.component';
 import { BioComponent } from '../bio/bio.component';
+import { CrewService } from './shared/crew.service';
+
 
 const routes: Routes = [
   {
-    path: 'crew:name', component: BioComponent
-  },
-  {
-    path: 'crew', component: CrewComponent
+    path: 'crew/:name', component: BioComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: []
+  providers: [
+    CrewService
+  ]
 })
 export class CrewRoutingModule { }
