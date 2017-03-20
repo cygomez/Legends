@@ -1,10 +1,18 @@
 <aside>
   <div>
     <img src="{{close.imgUrl}}" alt="close.alt">
+    <i class="material-icons">close</i>
+
   </div>
   <div>
     <ul *ngFor="let list of menuList" >
       <li><img src="{{list.imgUrl}}" alt="{{list.alt}}">{{list.title}}</li>
+      <i class="material-icons">photo_library</i>
+      <i class="material-icons">subject</i>
+      <i class="material-icons">info_outline</i>
+      <i class="material-icons">people_outline</i>
+      <i class="material-icons">content_cut</i>
+      <i class="material-icons">store</i>
     </ul>
   </div>
 </aside>

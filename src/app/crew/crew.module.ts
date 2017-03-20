@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { BioComponent } from '../bio/bio.component';
 import { CrewRoutingModule } from './crew-routing.module';
 
 @NgModule({
@@ -8,6 +8,8 @@ import { CrewRoutingModule } from './crew-routing.module';
     CommonModule,
     CrewRoutingModule
   ],
-  declarations: []
+  declarations: [
+    BioComponent
+  ]
 })
 export class CrewModule { }

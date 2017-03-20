@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { CREWDATA } from '../shared/mock-crew';
 
 import 'rxjs/add/operator/filter';
@@ -10,6 +10,6 @@ export class CrewService {
     }
 
     getCrewMember(name: string) {
-        return CREWDATA.filter(member => member.name === name).subscribe(person => person);
+        return CREWDATA.filter(member => member.name === name);
     }
 }
