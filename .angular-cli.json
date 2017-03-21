@@ -11,7 +11,6 @@
         "./src/assets/",
         "./src/assets/images/*.svg",
         "./src/assets/images/*.png"
-        
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -25,7 +24,10 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
       ],
-      "scripts": [],
+      "scripts": [
+        "./server/",
+        "./server.ts"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
